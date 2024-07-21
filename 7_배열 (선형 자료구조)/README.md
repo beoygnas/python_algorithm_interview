@@ -17,8 +17,19 @@
 - 원리 : 초기값을 작게 잡고, 꽉 채워지게 되면 `doubling` 등의 방법으로 배열의 크기를 증가시킨다.
   - 당연히 크기를 증가시키는 과정에서 시간적 overhead가 있지만, 치명적이고 자주 발생하는 상황은 아님.
 
+## 문제
+
+7. 두 수의 합 : https://leetcode.com/problems/two-sum/
+8. 빗물트래핑 : https://leetcode.com/problems/trapping-rain-water/
+
 ## 기록
 
 ### 1. `list.index(value)`
 
--
+- 원하는 value의 첫번째 index 찾기.
+- list는 `find()`가 없다. string에는 있음.
+
+### 2. dict에 key가 있는지 조사.
+
+- `key in dict{}` 하는게 가장 간단하다.
+- `key in dict.values()` -> 끔찍한 방식
