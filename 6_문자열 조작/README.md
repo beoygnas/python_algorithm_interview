@@ -7,6 +7,7 @@
 3. 로그파일 재정렬 : https://leetcode.com/problems/reorder-data-in-log-files
 4. 가장 흔한 단어 : https://leetcode.com/problems/most-common-word/
 5. 그룹 애너그램 : https://leetcode.com/problems/group-anagrams/
+6. 가장 긴 팰린드롬 부분 문자열 : https://leetcode.com/problems/longest-palindromic-substring/
 
 ## 기록
 
@@ -67,3 +68,12 @@ a = [1,2,3,4, 5]
 a.sort(reverse=True)
 b = sorted(a, reverse=True)
 ```
+
+### 6. UTF-8
+
+- ASCII : 1byte로 문자표현 (7bit + 1bit checksum)
+- Unicode : 2~4 byte로 문자표현, 영문자도 2byte로 표현하여 비효율적
+- UTF-8 : 가변길이 문자 인코딩 방식, (ASCII 127까지는 완전히 동일). 시작비트를 통해, 문자가 차지하는 전체 바이트를 정할 수 있다.
+- python3 부터는, 문자열이 모두 유니코드로 전환되어 한영 특수문자 모두 출력에 제약이 없다.
+  - 내부적으로 `UTF-8`을 사용하지는 않고, 문열에 포함된 문자 범위에 따라 서로 다른 고정 인코딩 방식을 택하여, 문자열 슬라이싱시에 원하는 문자의 index로 쉽게 접근할 수 있도록 하.ㅁ
+  - ex) 문자열에 따라 모두 ASCII 처리가 가능하면 `Latin-1` 인코딩 (고정 1바이트 인코딩)을 사용하고, 대부분의 경우 UCS-2 (고정 2바이트 인코딩), 특수문자가 포함된 경우 USC-4(고정 4바이트 인코딩)으로
