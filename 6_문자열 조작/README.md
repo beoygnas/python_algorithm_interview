@@ -6,6 +6,7 @@
 2. 문자열 뒤집기 : https://leetcode.com/problems/reverse-string
 3. 로그파일 재정렬 : https://leetcode.com/problems/reorder-data-in-log-files
 4. 가장 흔한 단어 : https://leetcode.com/problems/most-common-word/
+5. 그룹 애너그램 : https://leetcode.com/problems/group-anagrams/
 
 ## 기록
 
@@ -51,4 +52,18 @@ letters.sort(key = lambda x : (x.split()[1:], x.split()[0]))
 paragraph = re.sub(r'[^a-zA-Z]', ' ',  paragraph)
 paragraph = paragraph.lower().split() # 공백 제외하고 split()
 words = [word for word in paragraph if word not in banned]
+```
+
+### 5. `sort()` vs `sorted()`
+
+- [5\_그룹애너그램.py](./5_그룹애너그램.py)
+- `sort()`
+  - in-place sort 방식, 리스트 자체를 정렬하며 추가메모리 및 리턴값이 없음. (`None`)
+- `sorted()`
+  - 정렬된 새로운 리스트를 return
+
+```python
+a = [1,2,3,4, 5]
+a.sort(reverse=True)
+b = sorted(a, reverse=True)
 ```
