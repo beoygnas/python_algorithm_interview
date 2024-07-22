@@ -21,6 +21,7 @@
 
 7. 두 수의 합 : https://leetcode.com/problems/two-sum/
 8. 빗물트래핑 : https://leetcode.com/problems/trapping-rain-water/
+9. 세 수의 합 : https://leetcode.com/problems/3sum/
 
 ## 기록
 
@@ -33,3 +34,11 @@
 
 - `key in dict{}` 하는게 가장 간단하다.
 - `key in dict.values()` -> 끔찍한 방식
+
+### 3. 투포인터
+
+- 명확하게 정의된 것은 없지만, 주로 **정렬된 배열**을 대상으로 함.
+
+### 4. 중복되는 것을 배제하여 시간 단축
+
+- [9\_세수의합.py](./9_세수의합.py)
