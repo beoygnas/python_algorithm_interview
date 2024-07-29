@@ -23,6 +23,7 @@
 8. 빗물트래핑 : https://leetcode.com/problems/trapping-rain-water/
 9. 세 수의 합 : https://leetcode.com/problems/3sum/
 10. 배열파티션1 : https://leetcode.com/problems/array-partition/
+11. 자신을 제외한 배열의 곱 : https://leetcode.com/problems/product-of-array-except-self/
 
 ## 기록
 
@@ -43,3 +44,11 @@
 ### 4. 중복되는 것을 배제하여 시간 단축
 
 - [9\_세수의합.py](./9_세수의합.py)
+
+### 5. 빈 배열 check
+
+```python
+li = []
+if not lis : # 비었을 떄
+else : # 안비었을 때
+```
