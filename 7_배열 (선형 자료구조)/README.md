@@ -22,6 +22,7 @@
 7. 두 수의 합 : https://leetcode.com/problems/two-sum/
 8. 빗물트래핑 : https://leetcode.com/problems/trapping-rain-water/
 9. 세 수의 합 : https://leetcode.com/problems/3sum/
+10. 배열파티션1 : https://leetcode.com/problems/array-partition/
 
 ## 기록
 
