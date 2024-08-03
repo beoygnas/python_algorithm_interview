@@ -13,7 +13,7 @@
 ## 문제
 
 13. 팰린드롬 연결 리스트 : https://leetcode.com/problems/palindrome-linked-list/
-14.
+14. 두 정렬 리스트의 병합 : https://leetcode.com/problems/merge-two-sorted-lists/
 
 ## 기록
 
@@ -36,3 +36,25 @@ deq.pop() # O(1)
 
 - See [다중할당.ipynb](./다중할당.ipynb)
 - python의 다중할당은 트랜잭션으로 처리를 하기 때문에, 같은 객체를 참조하지 않아야 할 때 사용하면 좋다.
+- swap 역시, 보통 다중 함수로 처리함.
+
+```python
+# 3가지 변수 모두, 서로 다른 객체를 가리키게 됨.
+rev, rev.next, slow = slow, rev, slow.next
+
+# rev와 slow가 같은 객체를 참조하게 되어, 두 번째 라인에서 rev의 기댓값이 영향을 받음.
+rev, rev.next = slow, rev
+slow = slow.next
+
+l1, l2 = l2, l1 # l1과 l2로 swap
+```
+
+### 4. Optional[X]
+
+- 자료형 X 아니면 None이라는 뜻으로, kotlin의 ?랑 비슷.
+
+```bash
+# list1으로 ListNode 또는 None이 올 수 있다는 뜻으로, 리스트가 아님!
+def mergeTwoLists(self, list1: Optional[ListNode]) :
+
+```
