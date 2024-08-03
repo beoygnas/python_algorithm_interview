@@ -14,6 +14,7 @@
 
 13. 팰린드롬 연결 리스트 : https://leetcode.com/problems/palindrome-linked-list/
 14. 두 정렬 리스트의 병합 : https://leetcode.com/problems/merge-two-sorted-lists/
+15. 역순 연결 리스트 : https://leetcode.com/problems/reverse-linked-list/
 
 ## 기록
 
