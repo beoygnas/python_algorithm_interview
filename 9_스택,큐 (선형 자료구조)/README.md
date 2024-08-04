@@ -18,6 +18,7 @@
 
 20. 유효한 괄호 : https://leetcode.com/problems/valid-parentheses
 21. 중복 문자 제거 : https://leetcode.com/problems/remove-duplicate-letters (어려움)
+22. 일일 온도 : https://leetcode.com/problems/daily-temperatures
 
 ## 기록
 
@@ -27,4 +28,14 @@
 stack = []
 if stack :  # empty check
     pritnt("stack is not empty")
+```
+
+### 2. 0으로 초기화된 list 만들기
+
+- C++의 전역변수 배열은 0으로 초기화 됨.
+- 비슷하게 파이썬에서 0으로 초기화된 리스트 만들기
+
+```python
+length = 10
+zero_list = [0] * length
 ```
