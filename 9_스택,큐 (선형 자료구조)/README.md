@@ -14,13 +14,15 @@
 
 - 시퀀스의 end에는 entity를 추가하고 front 에서는 제거할 수 있는 엔티티 컬렉션.
 - [큐를 이용한 스택 구현](23_큐를이용한스택구현.py)
+- [스택을 이용한 큐 구현](24_스택을이용한큐구현.py)
 
 ## 문제
 
 20. 유효한 괄호 : https://leetcode.com/problems/valid-parentheses
 21. 중복 문자 제거 : https://leetcode.com/problems/remove-duplicate-letters (어려움)
 22. 일일 온도 : https://leetcode.com/problems/daily-temperatures
-23. 큐를 이용한 스택 구현 : https://leetcode.com/problems/implement-stack-using-queues/description/
+23. 큐를 이용한 스택 구현 : https://leetcode.com/problems/implement-stack-using-queues/
+24. 스택을 이용한 큐 구현 : https://leetcode.com/problems/implement-queue-using-stacks/
 
 ## 기록
 
