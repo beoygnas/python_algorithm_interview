@@ -11,10 +11,25 @@
 
 ### 우선순위 큐
 
+- 특정 조건에 따라 우선순위가 가장 높은 요소가 추출되는 자료형.
+- 최단경로 알고리즘, Heap 자료구조와 관련이 깊다.
+
 ## 문제
 
 26. 원형데크디자인 : https://leetcode.com/problems/design-circular-deque
+27. k개 정렬 리스트 병합 : https://leetcode.com/problems/merge-k-sorted-lists
 
 ## 기록
 
-### 1.
+### 1. `heapq`
+
+- 파이썬에서 우선순위 큐 풀이에 대부분 사용되는 모듈
+
+```python
+heapq.heappush(queue, item) # item tuple의 인자 순서대로 min heap push
+heapq.heapop(queue)
+```
+
+- `PriorityQueue` vs `headpq`
+  - `PriorityQueue`도 내부적으로 `headpq` 로 구현되있지만, thread safe를 보장한다.
+  - python은 GIL로 인해 multi threading이 제한되어, 사실상 유명무실한 차이이며 대부분 구현에서도 `heapq`모듈을 사용한다.
