@@ -23,6 +23,7 @@
 22. 일일 온도 : https://leetcode.com/problems/daily-temperatures
 23. 큐를 이용한 스택 구현 : https://leetcode.com/problems/implement-stack-using-queues/
 24. 스택을 이용한 큐 구현 : https://leetcode.com/problems/implement-queue-using-stacks/
+25. 원형 큐 디자인 : https://leetcode.com/problems/design-circular-queue
 
 ## 기록
 
@@ -43,3 +44,10 @@ if stack :  # empty check
 length = 10
 zero_list = [0] * length
 ```
+
+### 3. Circular Queue
+
+- 기존의 큐는, 큐의 공간이 꽉찰 경우에 deQueue로 인해 앞에 공간이 남음에도 불구하고 element를 추가할 수 없다.
+  - 동적 배열을 사용한 큐에서는 배열의 가장 앞에서부터 데이터를 꺼내오기 때문에, 데이터를 꺼낸 후 그 다음 인덱스의 데이터들을 모두 한 칸씩 이동시켜줘야 한다는 문제가 있다. (dequeue가 O(n)이 됨)
+- 앞의 공간을 재활용할 수 있다는 장점이 있다.
+- 투 포인터와 비슷하게 구현이 가능. See [25\_원형큐디자인.py](25_원형큐디자인.py)
