@@ -17,6 +17,7 @@
 ## 문제
 
 20. 유효한 괄호 : https://leetcode.com/problems/valid-parentheses
+21. 중복 문자 제거 : https://leetcode.com/problems/remove-duplicate-letters (어려움)
 
 ## 기록
 
