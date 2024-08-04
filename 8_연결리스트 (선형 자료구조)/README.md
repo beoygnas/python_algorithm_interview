@@ -18,7 +18,7 @@
 16. 두 수의 덧셈 : https://leetcode.com/problems/add-two-numbers/
 17. 페어의 노드 스왑 : https://leetcode.com/problems/swap-nodes-in-pairs
 18. 홀짝 연결 리스트 : https://leetcode.com/problems/odd-even-linked-list
-19. 역순 연결 리스트2 : # https://leetcode.com/problems/reverse-linked-list-ii
+19. 역순 연결 리스트2 : https://leetcode.com/problems/reverse-linked-list-ii
 
 ## 기록
 
