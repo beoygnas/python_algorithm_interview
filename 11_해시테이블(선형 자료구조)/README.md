@@ -50,9 +50,15 @@
 
 ## 문제
 
-28. 해시맵 디자인 (https://leetcode.com/problems/design-hashmap)
-29.
+28. 해시맵 디자인 : https://leetcode.com/problems/design-hashmap
+29. 보석과 돌 : https://leetcode.com/problems/jewels-and-stones
 
 ## 기록
 
-### 1.
+### 1. `key in dict` 의 시간복잡도는 O(1)
+
+- hash table에서 key가 있는지 체크하는 것은, 다음 과정을 거침
+  - key를 hashing, hash value를 get
+  - hash value로 배열에 접근
+  - 배열에 저장된 (key, value) pair (또는 item)이 key와 같은지를 check
+  - 이는 상수시간 내에 이루어진다.
