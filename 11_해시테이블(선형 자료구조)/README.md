@@ -52,6 +52,7 @@
 
 28. 해시맵 디자인 : https://leetcode.com/problems/design-hashmap
 29. 보석과 돌 : https://leetcode.com/problems/jewels-and-stones
+30. 중복 문자 없는 가장 긴 부분 문자열 : https://leetcode.com/problems/longest-substring-without-repeating-characters
 
 ## 기록
 
