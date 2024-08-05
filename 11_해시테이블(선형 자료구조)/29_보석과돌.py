@@ -3,7 +3,7 @@
 import collections
 from typing import *
 
-# 0. 간단하게 Counter 사용 : O(nm)
+# 0. 간단하게 Counter 사용 : O(m)
 class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
         answer = 0
