@@ -53,6 +53,7 @@
 28. 해시맵 디자인 : https://leetcode.com/problems/design-hashmap
 29. 보석과 돌 : https://leetcode.com/problems/jewels-and-stones
 30. 중복 문자 없는 가장 긴 부분 문자열 : https://leetcode.com/problems/longest-substring-without-repeating-characters
+31. 상위 K 빈도 요소 : https://leetcode.com/problems/top-k-frequent-elements
 
 ## 기록
 
@@ -63,3 +64,46 @@
   - hash value로 배열에 접근
   - 배열에 저장된 (key, value) pair (또는 item)이 key와 같은지를 check
   - 이는 상수시간 내에 이루어진다.
+
+### 2. `zip()` 함수
+
+- 두 개 이상의 sequence를 짧은 길이를 기준으로, 일대일 대응하는 새로운 tuple sequence(**immutable**)를 만든다.
+- [`generator`](../3_파이썬/generator_range.ipynb) 를 return하여, `list()`로 list를 만들어줘야함.
+- [`zip.ipynb`](./zip.ipynb)
+
+```python
+a = [1,2,3,4,5]
+b = [1,2,3,4]
+list(zip(a, b)) # [(1,1), (2,2), (3,3), (4,4)]
+```
+
+### 3. 아스테리스크 (`*`)
+
+- `Unpack` : tuple 또는 list를 언패킹하는데 사용.
+  - 리스트 출력에도 용이
+
+```python
+a = [1,2,3,4,5]
+print(a) # [1,2,3,4,5]
+print(*a) # 1 2 3 4 5, 5개의 int를 return, but 출력은 안됨.
+```
+
+- 함수의 parameter에서 사용될때는 packing도 가능함.
+  - 아래 함수에서 params는 4개이지만 잘 동작
+
+```python
+def f(*params) :
+    print(params)
+f(1,2,3,4) #(1,2,3,4) 출력
+```
+
+- `**` : key/value pair를 unpacking 하는데 사용
+  - `*` : tuple or list를 unpacking
+
+```python
+date_info = {'year': '2020', 'month': '01', 'day' :'7'}
+new_info = {**date_info, 'day':14}
+new_info #  {'year': '2020', 'month': '01', 'day' :'14'}
+```
+
+- [`asterisk.ipynb`](./asterisk.ipynb)
