@@ -36,6 +36,7 @@
 
 32. 섬의 개수: https://leetcode.com/problems/number-of-islands
 33. 전화 번호 문자 조합: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+34. 순열: https://leetcode.com/problems/permutations
 
 ## 기록
 
@@ -48,3 +49,28 @@
 # m개의 리스트를 하나하나 다른 객체를 생성해줌.
 [[0] * n for _ in range(m)]
 ```
+
+### 2. itertools를 이용한 순열/
+
+- [`itertools.ipynb`](./itertools.ipynb)
+
+```python
+a = ['a', 'b', 'c']
+list(itertools.permutations(a)) # 순열
+```
+
+### 3. 객체 복사
+
+- python에서 변수의 값을 할당하는 모든 행위는, value 객체에 대한 참조를 바꿔주는 것을 의미.
+  - 변수의 할당된 값을 바꿔줄 때 mutable 객체라면, 의도치 않게 그 객체를 가르키고 있는 다른 변수의 값을 바꿀 수도 있음.
+  - 따라서 **값만 똑같은 새로운 객체**를 할당하고 싶을 때는, `copy()` 같은 메소드를 사용한다.
+
+```python
+a = [1,2,3]
+b = a
+c = a[:]
+d = copy(a)
+id(a), id(b), id(c), id(d) # a=b != c != d
+```
+
+- 또한, 객체가 `nested list` 와 같이 복잡할 경우에는 모든 element에 대해서 copy()가 이루어질 수 있도록 `deepcopy()`를 사용한다.
