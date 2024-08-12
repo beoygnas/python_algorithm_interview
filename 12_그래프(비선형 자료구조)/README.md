@@ -35,6 +35,7 @@
 ## 문제
 
 32. 섬의 개수: https://leetcode.com/problems/number-of-islands
+33. 전화 번호 문자 조합: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
 ## 기록
 
