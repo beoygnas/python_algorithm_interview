@@ -38,6 +38,7 @@
 33. 전화 번호 문자 조합: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 34. 순열: https://leetcode.com/problems/permutations
 35. 조합: https://leetcode.com/problems/combinations
+36. 조합의 합: https://leetcode.com/problems/combination-sum
 
 ## 기록
 
@@ -76,3 +77,17 @@ id(a), id(b), id(c), id(d) # a=b != c != d
 ```
 
 - 또한, 객체가 `nested list` 와 같이 복잡할 경우에는 모든 element에 대해서 copy()가 이루어질 수 있도록 `deepcopy()`를 사용한다.
+
+### 4. list + list 연산
+
+- list + list는, 리스트를 append 한 새로운 list 객체를 return
+
+```python
+elements.append(candidates[i])
+fun(elements, i, sum+candidates[i])
+elements.pop()
+```
+
+```python
+fun(elements + [candidates[i]], i, sum+candidates[i])
+```
