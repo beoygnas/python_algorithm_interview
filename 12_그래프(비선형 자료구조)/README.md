@@ -37,6 +37,7 @@
 32. 섬의 개수: https://leetcode.com/problems/number-of-islands
 33. 전화 번호 문자 조합: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 34. 순열: https://leetcode.com/problems/permutations
+35. 조합: https://leetcode.com/problems/combinations
 
 ## 기록
 
@@ -50,13 +51,14 @@
 [[0] * n for _ in range(m)]
 ```
 
-### 2. itertools를 이용한 순열/
+### 2. itertools를 이용한 순열/조합
 
 - [`itertools.ipynb`](./itertools.ipynb)
 
 ```python
 a = ['a', 'b', 'c']
 list(itertools.permutations(a)) # 순열
+list(itertools.combinations(a, 2)) # 조합
 ```
 
 ### 3. 객체 복사
