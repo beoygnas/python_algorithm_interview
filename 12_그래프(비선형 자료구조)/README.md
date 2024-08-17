@@ -40,6 +40,7 @@
 35. 조합: https://leetcode.com/problems/combinations
 36. 조합의 합: https://leetcode.com/problems/combination-sum
 37. 부분 집합: https://leetcode.com/problems/subsets
+38. 일정재구성: https://leetcode.com/problems/reconstruct-itinerary
 
 ## 기록
 
