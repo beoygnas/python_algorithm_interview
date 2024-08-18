@@ -41,6 +41,7 @@
 36. 조합의 합: https://leetcode.com/problems/combination-sum
 37. 부분 집합: https://leetcode.com/problems/subsets
 38. 일정재구성: https://leetcode.com/problems/reconstruct-itinerary
+39. 코스스케쥴: https://leetcode.com/problems/course-schedule/
 
 ## 기록
 
