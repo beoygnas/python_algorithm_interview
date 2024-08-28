@@ -34,7 +34,21 @@
 ## 문제
 
 42. 이진 트리의 최대 깊이 (https://leetcode.com/problems/maximum-depth-of-binary-tree)
+43. 이진 트리의 직경 (https://leetcode.com/problems/diameter-of-binary-tree)
 
 ## 기록
 
-### 1.
+### 1. nested function에서 class variable를 사용하는 이유
+
+- 다음과 같이 class 변수로 사용하지 않고 부모함수의 변수를 재할당할 경우, `dfs()` 함수 내에서 local variable로 새로 선언이 된다.
+
+  ```python
+  answer = 0
+  def dfs() :
+      ...
+      answer = max(answer, -1)
+      ...
+  # UnboundLocalError: cannot access local variable 'answer' where it is not associated with a value
+  ```
+
+- `nonlocal answer` 를 사용하거나, class variable로 사용해야함. (See [43\_이진트리의직경.py](./43_이진트리의직경.py))
