@@ -37,6 +37,7 @@
 43. 이진 트리의 직경 (https://leetcode.com/problems/diameter-of-binary-tree)
 44. 가장 긴 동일 값의 경로 (https://leetcode.com/problems/longest-univalue-path)
 45. 이진 트리 반전 (https://leetcode.com/problems/invert-binary-tree)
+46. 두 이진 트리 병합 (https://leetcode.com/problems/merge-two-binary-trees)
 
 ## 기록
 
