@@ -38,6 +38,7 @@
 44. 가장 긴 동일 값의 경로 (https://leetcode.com/problems/longest-univalue-path)
 45. 이진 트리 반전 (https://leetcode.com/problems/invert-binary-tree)
 46. 두 이진 트리 병합 (https://leetcode.com/problems/merge-two-binary-trees)
+47. 이진 트리 직렬화 & 역직렬화 (https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
 
 ## 기록
 
@@ -55,3 +56,11 @@
   ```
 
 - `nonlocal answer` 를 사용하거나, class variable로 사용해야함. (See [43\_이진트리의직경.py](./43_이진트리의직경.py))
+
+### 2. defaultdict에 None 넣기
+
+- defaultdict의 default 값으로 None을 넣어줘야 할 떄 다음과 같이 lambda를 이용하여 선언
+
+  ```python
+  tree_list = collections.defaultdict(lambda: None)
+  ```
