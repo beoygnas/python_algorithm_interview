@@ -39,6 +39,7 @@
 45. 이진 트리 반전 (https://leetcode.com/problems/invert-binary-tree)
 46. 두 이진 트리 병합 (https://leetcode.com/problems/merge-two-binary-trees)
 47. 이진 트리 직렬화 & 역직렬화 (https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+48. 균형 이진 트리 (https://leetcode.com/problems/balanced-binary-tree)
 
 ## 기록
 
