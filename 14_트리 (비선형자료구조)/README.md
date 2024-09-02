@@ -4,6 +4,7 @@
 - 루트 값과, 부모-자식 관계의 서브트리로 구성되며, 서로 연결된 노드의 집합
 - 재귀로 정의된(recursively defined) + 자기참조 (self-referential) 자료구조]
   - 루트도 트리고, 자식도 트리고, 또 그 자식도 트리다.
+- A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.
 
 ### 트리의 각 명칭
 
@@ -40,6 +41,7 @@
 46. 두 이진 트리 병합 (https://leetcode.com/problems/merge-two-binary-trees)
 47. 이진 트리 직렬화 & 역직렬화 (https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
 48. 균형 이진 트리 (https://leetcode.com/problems/balanced-binary-tree)
+49. 최소 높이 트리 (https://leetcode.com/problems/minimum-height-trees)
 
 ## 기록
 
@@ -64,4 +66,20 @@
 
   ```python
   tree_list = collections.defaultdict(lambda: None)
+  ```
+
+### 3. list/dict 에서 값 제거하기
+
+- `list`
+  - remove(value)
+  - pop(index)
+  ```python
+    parent = graph[leaf].pop() # pop으로 마지막 index 제거, O(1)
+    graph[parent].remove(leaf) # remove + value로 제거, O(n)
+  ```
+- `dict`
+  - del / pop : `O(n)`
+  ```python
+  del graph[leaf] #  삭제
+  graph.pop(leaf, None) # leaf라는 키가 있으면 제거, 없으면 None
   ```
