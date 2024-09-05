@@ -32,6 +32,18 @@
   2. complete binary tree : 마지막 level을 제외하고는 full binary 트리이며, 마지막 레벨의 모든 노드는 왼쪽부터 채워진 이진 트리
   3. perfact binary tree : 리프를 제외한 모든 노드가 2개의 자식 노드를 가지며, 모든 리프 노드는 동일한 depth, level을 갖는다.
 
+### 이진 탐색 트리 (BST)
+
+- 노드의 왼쪽 서브트리에는 그 노드의 값보다 작은 값이, 오른쪽 서브트리에는 같거나 큰 값들을 지닌 노드들로 이루어져 있는 **정렬된 트리**
+
+  - pros : 시간복잡도가 `O(log n)`
+  - cons : 균형이 제대로 이루어지지 있자 않다면, `O(n)`
+
+- **자가 균형 이진 탐색 트리 (self-balancing binary search tree)**
+  - 삽입, 삭제 시 자동으로 높이를 작게 유지하는 노드 기반의 이진 탐색 트리다.
+  - 최악의 경우에도 이진 트리의 균형이 잘 맞도록 유지한다.
+  - ex) `AVL트리`, `레드-블랙 트리`
+
 ## 문제
 
 42. 이진 트리의 최대 깊이 (https://leetcode.com/problems/maximum-depth-of-binary-tree)
@@ -42,6 +54,7 @@
 47. 이진 트리 직렬화 & 역직렬화 (https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
 48. 균형 이진 트리 (https://leetcode.com/problems/balanced-binary-tree)
 49. 최소 높이 트리 (https://leetcode.com/problems/minimum-height-trees)
+50. 정렬된 배열의 이진 탐색 트리 변환
 
 ## 기록
 
