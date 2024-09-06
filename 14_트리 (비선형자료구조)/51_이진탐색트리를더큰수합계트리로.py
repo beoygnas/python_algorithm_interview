@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree
+# https://leetcode.com/problems/range-sum-of-bst
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
