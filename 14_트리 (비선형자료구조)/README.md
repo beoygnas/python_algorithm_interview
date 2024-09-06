@@ -57,6 +57,7 @@
 50. 정렬된 배열의 이진 탐색 트리 변환 (https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)
 51. 이진 탐색 트리를 더 큰 수 합계 트리로 (https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)
 52. 이진 탐색 트리 합의 범위 (https://leetcode.com/problems/range-sum-of-bst)
+53. 이진 탐색 트리 노드 간 최소 거리 (https://leetcode.com/problems/minimum-distance-between-bst-nodes)
 
 ## 기록
 
