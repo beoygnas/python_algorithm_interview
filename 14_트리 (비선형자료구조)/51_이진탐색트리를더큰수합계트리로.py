@@ -1,4 +1,4 @@
-# python_algorithm_interview/14_트리 (비선형자료구조)/50_정렬된배열의이진탐색트리.py
+# https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
