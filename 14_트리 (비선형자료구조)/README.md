@@ -44,6 +44,38 @@
   - 최악의 경우에도 이진 트리의 균형이 잘 맞도록 유지한다.
   - ex) `AVL트리`, `레드-블랙 트리`
 
+### 트리 순회
+
+- 그래프 순회의 한 형태로, 트리 자료구조에서 각 노드를 정확히 한 번 방문하는 과정을 말함
+- BFS 또는 DFS로 탐색하며, 노드 방문순서에 따라 다음 3가지로 분류.
+
+  - 전위 순회 (NLR) : 자신 -> 왼쪽 -> 오른쪽
+
+    ```python
+    def preorder(node) :
+      if node is None : return
+      print(node.val)
+      preorder(node.left)
+      preorder(node.right)
+    ```
+
+  - 중위 순회 (LNR) : 왼쪽 -> 자신 -> 오른쪽
+    ```python
+    def inorder(node) :
+      if node is None : return
+      preorder(node.left)
+      print(node.val)
+      preorder(node.right)
+    ```
+  - 후위 순회 (LRN) : 왼쪽 -> 오른쪽 -> 자신
+    ```python
+    def postorder(node) :
+      if node is None : return
+      preorder(node.left)
+      preorder(node.right)
+      print(node.val)
+    ```
+
 ## 문제
 
 42. 이진 트리의 최대 깊이 (https://leetcode.com/problems/maximum-depth-of-binary-tree)
@@ -58,6 +90,7 @@
 51. 이진 탐색 트리를 더 큰 수 합계 트리로 (https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)
 52. 이진 탐색 트리 합의 범위 (https://leetcode.com/problems/range-sum-of-bst)
 53. 이진 탐색 트리 노드 간 최소 거리 (https://leetcode.com/problems/minimum-distance-between-bst-nodes)
+54. 전위, 중위 순회 결과로 이진트리 구축 (https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)
 
 ## 기록
 
