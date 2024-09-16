@@ -7,4 +7,21 @@
 
 ## 문제
 
-56. 트라이 구현
+56. 트라이 구현 : https://leetcode.com/problems/implement-trie-prefix-tree
+57. 팰린드롬 페어 : https://leetcode.com/problems/palindrome-pairs
+
+## 기록
+
+### 1. staticmethod 데코레이터
+
+- `@stacticmethod` 데코레이터가 붙은 method는, 클래스와 독립적은 함수로서의 의미가 강하게 갖는다. [57\_팰린드롬페어.py](57_팰린드롬페어.py) 에서도, `is_palindrome()`과 같은 고유한 의미를 갖는 함수를 클래스 내에 선언할 경우에 데코레이터를 붙였다.
+
+```python
+class CLASS :
+    def a(self) :
+        pass
+
+    @stacticmethod
+    def b() :
+        pass
+```
