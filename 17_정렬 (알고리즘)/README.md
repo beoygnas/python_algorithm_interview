@@ -46,6 +46,7 @@ def quicksort(A, lo, hi) :
 61. 가장 큰 수 : https://leetcode.com/problems/largest-number
 62. 유효한 애너그램 : https://leetcode.com/problems/valid-anagram
 63. 색 정렬 : https://leetcode.com/problems/sort-colors
+64. 원점에 k번째로 가까운 점 : https://leetcode.com/problems/k-closest-points-to-origin
 
 ## 기록
 
