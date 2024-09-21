@@ -24,7 +24,6 @@
 
 ```python
 def quicksort(A, lo, hi) :
-
     def partition(lo, hi) :
         pivot, left = A[hi], lo
         for right in range(lo, hi) :
@@ -37,8 +36,6 @@ def quicksort(A, lo, hi) :
     pivot = partition(lo, hi)
     quicksort(A, lo, pivot - 1)
     quicksort(A, pivot + 1, hi)
-
-
 ```
 
 ## 문제
@@ -50,7 +47,7 @@ def quicksort(A, lo, hi) :
 
 ## 기록
 
-1. key를 통한 정렬
+### 1. key를 통한 정렬
 
 - comparable 객체가 아닌 경우, `lambda`를 통해 정렬
 - 내림차순 정렬을 원하는 경우는, `-`를 붙인다.
@@ -59,7 +56,7 @@ def quicksort(A, lo, hi) :
   sorted_li = sorted(li, key=lambda x: (x[0], -x[1]))
   ```
 
-2. key에서 comparison에 대한 함수 변경
+### 2. key에서 comparison에 대한 함수 변경
 
 - compare function을 바꾸고 싶을 경우, `functools` 라이브러리의 `cmp_to_key`를 사용
 - compare function의 return 값은 `1, 0, -1` 만 가능.
