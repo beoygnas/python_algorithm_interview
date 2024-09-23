@@ -9,6 +9,7 @@
 
 65. 이진 검색 : https://leetcode.com/problems/binary-search
 66. 회전 정렬된 배열 검색 : https://leetcode.com/problems/search-in-rotated-sorted-array
+67. 두 배열의 교집합 : https://leetcode.com/problems/intersection-of-two-arrays/
 
 ## 기록
 

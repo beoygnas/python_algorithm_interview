@@ -46,17 +46,3 @@ class Solution:
             return (index + offset) % len(nums)
         else : 
             return -1
-
-
-
-        
-        
-        
-        
-
-
-
-        
-        
-        
-        
