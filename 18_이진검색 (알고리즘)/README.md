@@ -11,6 +11,7 @@
 66. 회전 정렬된 배열 검색 : https://leetcode.com/problems/search-in-rotated-sorted-array
 67. 두 배열의 교집합 : https://leetcode.com/problems/intersection-of-two-arrays/
 68. 두 수의 합2 : https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
+69. 2D 행렬 검색 : https://leetcode.com/problems/search-a-2d-matrix-ii
 
 ## 기록
 
