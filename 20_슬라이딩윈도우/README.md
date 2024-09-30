@@ -13,3 +13,5 @@
 ## 문제
 
 75. 최대 슬라이딩 윈도우 : https://leetcode.com/problems/sliding-window-maximum
+76. 부분 문자열이 포함된 최소 윈도우 : https://leetcode.com/problems/minimum-window-substring
+77. 가장 긴 반복 문자 대체 : https://leetcode.com/problems/longest-repeating-character-replacement
